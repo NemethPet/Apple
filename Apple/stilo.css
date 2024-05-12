@@ -1,0 +1,64 @@
+.apple-logo {
+    width: 200px;
+    display: block;
+    margin: 0 auto;
+}
+h1{
+    margin-left: 100px;
+    margin-bottom: 30px;
+}
+#szöveg{
+    margin-left: 80px;
+    margin-right: 80px;
+    margin-bottom: 100px;
+    text-align: justify;
+    font-size: x-large;
+}
+#menu{
+    font-size: large;
+}
+h2{
+        margin-left: 890px;
+        margin-bottom: 30px;
+        text-align: left;
+}
+footer {
+    background-color: #464646;
+    padding: 10px;
+    color: white;
+}
+
+input,select{
+    font-weight: bold;
+border-radius: 5px; 
+width: 80px;
+font-size: 18px;
+color:#464646;   
+}
+#szektor{
+  width: 200px;  
+}
+.bal{
+    float: left;
+    width: 350px;
+}
+.gomb{
+    font-weight: bold;
+border-radius: 5px; 
+width: 200px;
+font-size: 18px;
+color:#464646; 
+}
+.megjelenit{
+    display:inline-block;
+}
+#cim{
+    font-size: xx-large;
+    font-weight: bold;
+}
+#alap{
+    margin-left: 100px;
+}
+#applevision{
+    margin-right: auto;
+}

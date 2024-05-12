@@ -1,0 +1,102 @@
+<!DOCTYPE html>  
+<html lang="hu">
+<head>
+    <link rel="stylesheet" href="stilo.css">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <title>Megrendelés</title>
+    <meta charset="utf-8">
+    <meta lang="hu">
+</head>
+<body>
+    <!-- Banner -->
+     <header class="bg-dark text-white text-center py-4">
+         <img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg" alt="Apple Logo" class="apple-logo">
+        </header>
+
+     <!-- Menu -->
+     <nav class="bg-light p-2">
+          <div class="container">
+              <ul class="nav">
+                  <li class="nav-item ">
+                      <a class="nav-link" href="Kezdőlap.html">Kezdőlap</a>
+                  </li>
+                 <li class="nav-item">
+                     <a class="nav-link" href="Legnépszerűbb termékeink.html">Legnépszerűbb termékeink</a>
+                </li>
+                 <li class="nav-item">
+                    <a class="nav-link" href="R">Rendelés</a>
+                </li>
+            </ul>
+        </div>
+     </nav>
+    
+
+     <div id="alap">
+<p id="cim">Megrendelés</p>
+    <form>
+    <p><b>Termék/darab</b> <input type="number" value="1" id="fo" min="1" step="1" max="10" ></p>
+        
+        
+
+<div class="megjelenit">
+
+<div class="bal">
+    <h4>Termék kiválasztása</h4>
+    
+        <select>         
+   <option value="iphone 15" selected>iphone 15</option>
+   <option value="apple watch">apple watch</option>
+   <option value="Appel vision pro">Appel vision pro</option>
+  </select>
+  </div>
+    </div>
+    <p></p>
+    <p><b>Email cím megadása:</b><input style="width: 300px;"  type="text"></p>
+            <p><b>Telefonszám megadása:</b><input style="width: 300px;" value="+36" id="fo" min="+36" step="+36" max="+36"></p>
+            <p><b>Bankártya szám megadása:</b><input style="width: 300px;"  type="text"></p>
+            
+                    
+    <div class="jobb">
+        <h4>Extra kellékek:</h4>
+        
+        <input type="checkbox" name="arcfestes" id="arcfestes" value="Arcfestés 700 Ft/fő">
+       <label for="arcfestes"><b>Védőfólia</b>/1500 Ft</label><br>
+  
+          <input type="checkbox" name="zaszlo" id="zaszlo" value="Body flag 3000 Ft/fő">
+       <label for="zaszlo"><b>Telefontok</b>/4000 Ft</label><br>
+          
+          <input type="checkbox" name="tapsolorud" id="tapsolorud" value="Tapsolórúd 450 Ft/fő">
+       <label for="tapsolorud"><b>Telefontöltő</b>/5000 Ft</label><br>
+          
+          <input type="checkbox" name="megafon" id="megafon" value="Megaphone 9000 Ft/fő">
+       <label for="megafon"><b>Tárhelybővítés</b>/7000 Ft</label><br>
+      </div> 
+      <br>
+      <div class="megjelenit">
+        <input class="gomb" type="button" value="Megrendelés"> 
+        </div>
+        <div class="megjelenit">
+            <input class="gomb" type="reset" value="törlés"> 
+        </div>
+    </form>
+    <p></p>
+</div>
+    <footer>
+        <div class="container-fluid">
+        <div class="row">
+          <div class="col">
+              <p>Elérhetőségeiink: E-mail: apple.official@gmail.com<br> Telefonszám: +36 20 341 5643</p>
+          </div>
+          <div class="col">
+            <img src="képek/facebook.png" alt="facebook" width="30px" class="rounded">
+              <p>Apple.offical</p>
+          </div>
+          <div class="col">
+            <img src="képek/instagram.jpg" alt="facebook" width="30px" class="rounded">
+              <p>Apple_offi</p>
+          </div>
+        </div>
+      </div>
+      </footer>
+</body>
+</html>
