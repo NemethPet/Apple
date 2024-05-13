@@ -29,7 +29,7 @@ footer {
 }
 
 input,select{
-    font-weight: bold;
+font-weight: bold;
 border-radius: 5px; 
 width: 80px;
 font-size: 18px;
@@ -61,4 +61,8 @@ color:#464646;
 }
 #applevision{
     margin-right: auto;
+}
+table, th, td{
+    border: 1px solid black ;
+    text-align: center;
 }
