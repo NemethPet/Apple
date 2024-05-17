@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <title>Testtömegindex számítása Feladat</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="tti3.js"></script>
+  <link href="tti3.css" rel="stylesheet">
+</head>
+<body onload="szamol()">
+
+<div class="container-fluid p-5 bg-primary text-white text-center">
+  <h1>Testtömegindex számítása Feladat</h1>
+  <p>A testtömegindex (TTI, vagy BMI - body mass index) az ember testtömegéből és a méterben mért magasságából számított érték, mely felhívhatja a figyelmet az esetleges túlsúlyosságra vagy soványságra. Számítása a következő képlettel történik:</p> 
+</div>
+  
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-12 col-sm-12 col-lg-4">
+      <h3>Testtömegindex számítása képlet</h3>
+      <img src="kep1.gif" alt="Testtömegindex számítása képlet" title="Testtömegindex számítása képlet">
+      
+    </div>
+    <div class="col-12 col-sm-12 col-lg-4">
+      <h3>Testtömegindex értékek</h3>
+      <p>Az így kapott eredmény pontos értelmezése egyebek mellett a <a href="https://hu.wikipedia.org/wiki/Testt%C3%B6megindex" target="_blank">Wikipedia</a>  oldalán is megtekinthető, azonban a feladat mostani megvalósításakor az alábbi egyszerűsített kiértékelés is alkalmazható:</p>
+      <p class="sarga kozepre">
+        <img src="kep2.gif" alt="sovány testalkat" title="sovány testalkat"><br>
+        sovány testalkat<br>
+        BMI &lt; 18
+      </p>
+      <p class="zold kozepre">
+        <img src="kep3.gif" alt="normál testsúly" title="normál testsúly"><br>
+        normál testsúly<br>
+        18 &lt;= BMI &lt;= 25
+      </p>
+      <p class="piros kozepre">
+        <img src="kep4.gif" alt="túlsúlyosság" title="túlsúlyosság"><br>
+        túlsúlyosság<br>
+        25 &lt;
+      </p>
+      
+    </div>
+    <div class="col-12 col-sm-12 col-lg-4">
+      <h3>Testtömegindex számítása</h3>        
+      <p>Írd be a testsúlyodat kg-ban és a magasságodat cm-ben majd kattints a számol gombra!</p>
+      <form id="urlap">
+        <label for="testsuly">Testsúlyod kg-ban:</label><br>
+        <input type="range" class="form-range" min="20" max="250" value="100" id="suly" oninput="szamol()">
+        <input class="form-control" disabled type="number" min="20" max="250" value="100" id="testsuly" ><br>
+
+        <label for="testmagassag">Magasságod cm-ben:</label><br>
+        <input type="range" class="form-range" min="150" max="250" value="180" id="magassag" oninput="szamol()">
+        <input class="form-control" disabled type="number" min="150" max="250" value="180" id="testmagassag" ><br>
+
+        <label for="tti">Testtömegindexed kg/m<sup>2</sup>-ben:</label><br>
+        <input class="form-control" type="number" disabled id="tti"><br>
+        <div id="testkep"></div>
+
+        <div id="sulytoblet">
+          <label for="sulytobleted">Súlytöbbleted  kg-ban:</label><br>
+          <input class="form-control" type="number" disabled id="sulytobleted"><br>
+        </div>
+
+        
+
+      </form>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
